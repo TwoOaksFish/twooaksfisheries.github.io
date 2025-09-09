@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Two Oaks Fishing Lake</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Oaks Fisheries</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #1e90ff; color: white; text-align: center; padding: 20px; }
+    nav { background: #333; padding: 10px; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .content { padding: 20px; }
+    .form { max-width: 500px; margin: 20px 0; }
+    .form input, .form textarea { width: 100%; margin: 5px 0; padding: 8px; }
+    .form button { padding: 10px; background: #1e90ff; color: white; border: none; cursor: pointer; }
+    .gallery img { max-width: 200px; margin: 10px; }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Two Oaks Fishing Lake</h1>
-  <p>2.98 acres of prime fishing with depths up to 27ft.</p>
+  <header>
+    <h1>Two Oaks Fisheries</h1>
+    <p>Your premier fishing destination!</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#lake">The Lake</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#waiting">Waiting List</a>
+    <a href="#tips">Fishing Tips</a>
+    <a href="#events">Events</a>
+  </nav>
+
+  <div class="content" id="home">
+    <h2>Welcome</h2>
+    <p>Discover 2.98 acres of fishing bliss at Two Oaks Fisheries, with depths up to 27ft. Open year-round, best from May to August.</p>
+  </div>
+
+  <div class="content" id="about">
+    <h2>About Us</h2>
+    <p>Two Oaks Fisheries is family-run, offering a peaceful retreat for anglers. Established in 2025, we prioritize sustainability and community.</p>
+  </div>
+
+  <div class="content" id="lake">
+    <h2>The Lake</h2>
+    <p>Our lake features diverse fish species and scenic views. Average depth is 13.5ft, with ongoing silt rejuvenation using chalk.</p>
+  </div>
+
+  <div class="content" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/200x150?text=Fish+1" alt="Fish 1">
+      <img src="https://via.placeholder.com/200x150?text=Fish+2" alt="Fish 2">
+      <img src="https://via.placeholder.com/200x150?text=Lake+View" alt="Lake View">
+    </div>
+  </div>
+
+  <div class="content" id="contact">
+    <h2>Contact Us</h2>
+    <div class="form">
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <p>Email: info@twooaksfisheries.com</p>
+    <p>Phone: +44 123 456 7890</p>
+  </div>
+
+  <div class="content" id="waiting">
+    <h2>Waiting List</h2>
+    <div class="form">
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit">Join Waiting List</button>
+      </form>
+    </div>
+    <p>Get notified when spots open!</p>
+  </div>
+
+  <div class="content" id="tips">
+    <h2>Fishing Tips</h2>
+    <ul>
+      <li>Best bait: Worms in summer.</li>
+      <li>Fish early morning for best catches.</li>
+      <li>Check weather before visiting.</li>
+    </ul>
+  </div>
+
+  <div class="content" id="events">
+    <h2>Events</h2>
+    <p>Join our Autumn Fishing Contest on Oct 15, 2025. Register via Contact Us!</p>
+  </div>
 </body>
 </html>
